@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+
+        .left,.right{
+       background-color: #fff;
+       border: 2px solid #087f5b;
+       height: 40px;
+       width: 40px;
+       border-radius: 100px;
+    box-shadow: 0 12px 24px rgb(0,0,0,0.2);
+    cursor: pointer;
+    transform: translate(0,-20%);
+
+        }
+        .left:hover,.right:hover{
+            background-color: #087f5b;
+        }
+        .icon-left,.icon-right{
+            stroke: #087f5b;
+        }
+        .icon-left:hover,.icon-right:hover{
+            stroke: #fff;
+        }
+
+        .pages{
+            display: flex;
+gap: 10px;
+justify-content: center;
+align-content: center;
+margin-top: 100px;
+        }
+.page{
+    border: none;
+    background-color: #fff;
+    height: 24px;
+    width: 24px;
+    stroke: #087f5b;
+    border-radius: 50%;
+}
+.page:hover{
+    background-color: #087f5b;
+    cursor: pointer;
+    color: #fff;
+}
+    </style>
+
+    <div class="pages">
+        <button class="left">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-left">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+</svg>
+
+              
+        </button>
+        <button class="page">1</button>
+        <button class="page">2</button>
+        <button class="page">3</button>
+        <button class="page">4</button>
+        <button class="page">5</button>
+        <button class="page">6</button>
+        <button class="page">7</button>
+        <button class="page">...</button>
+        <button class="page">23</button>
+
+        <button class="right">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-right">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>
+              
+              
+        </button>
+    </div>
+    
+</body>
+</html>
